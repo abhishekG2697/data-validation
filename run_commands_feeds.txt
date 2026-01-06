@@ -1,0 +1,26 @@
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_1.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_2.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_3.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/iceberg_0509.csv \
+    --output-dir validation_output_OD_Melbourne_Storm
+
+
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_1.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_2.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_3.csv \
+    --iceberg-file /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/iceberg_0509_1.csv \
+                   /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/iceberg_0509_2.csv \
+    --output-dir validation_output_OH_Melbourne_Storm
+
+=====WorldRugby
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/WorldRugby/secor_09-09.csv \
+    --iceberg-file /Users/agarimella/partner_feeds_validation/data/OH/WorldRugby/iceberg_09-09.csv \
+    --output-dir validation_output_OH_WorldRugby
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/WorldRugby/secor_09-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/WorldRugby/iceberg_09-09.csv \
+    --output-dir validation_output_OD_WorldRugby

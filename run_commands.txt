@@ -1,0 +1,95 @@
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_1.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_2.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/secor_0509_3.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/Melbourne_Storm/iceberg_0509.csv \
+    --output-dir validation_output_OD_Melbourne_Storm
+
+
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_1.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_2.csv \
+                  /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/secor_0509_3.csv \
+    --iceberg-file /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/iceberg_0509_1.csv \
+                   /Users/agarimella/partner_feeds_validation/data/OH/Melbourne_Storm/iceberg_0509_2.csv \
+    --output-dir validation_output_OH_Melbourne_Storm
+
+=====WorldRugby
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/WorldRugby/secor_09-09.csv \
+    --iceberg-file /Users/agarimella/partner_feeds_validation/data/OH/WorldRugby/iceberg_09-09.csv \
+    --output-dir validation_output_OH_WorldRugby
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/WorldRugby/secor_09-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/WorldRugby/iceberg_09-09.csv \
+    --output-dir validation_output_OD_WorldRugby
+===== VVA
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/VVA/secor_10-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OH/VVA/iceberg_10-09.csv \
+    --output-dir validation_output_OH_VVA
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/VVA/secor_09-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/VVA/iceberg_09-09.csv \
+    --output-dir validation_output_OD_VVA
+
+========= VEL
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/VEL/secor_09-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OH/VEL/iceberg_09-09.csv \
+    --output-dir validation_output_OH_VEL
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/VEL/secor_09-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/VEL/iceberg_09-09.csv \
+    --output-dir validation_output_OD_VEL
+
+========= RA_Golf
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/RA_Golf/secor_10-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OH/RA_Golf/iceberg_10-09.csv \
+    --output-dir validation_output_OH_RA_Golf
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/RA_Golf/secor_10-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/RA_Golf/iceberg_10-09.csv \
+    --output-dir validation_output_OD_RA_Golf
+
+========= AstonVilla
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/secor_0909_1.csv \
+                 /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/secor_0909_2.csv \
+                 /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/secor_0909_3.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/iceberg_0909_v2.csv \
+    --output-dir validation_output_OH_AstonVilla
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/AstonVilla/secor_09-09.csv \
+                 /Users/agarimella/partner_feeds_validation/data/OD/AstonVilla/secor_09-09_2.csv \
+                 /Users/agarimella/partner_feeds_validation/data/OD/AstonVilla/secor_09-09_3.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/AstonVilla/iceberg_09-09.csv \
+    --output-dir validation_output_OD_AstonVilla
+
+python3 order_header_validation.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/secor_0909_2.csv \
+    --iceberg-file /Users/agarimella/partner_feeds_validation/data/OH/AstonVilla/iceberg_0909_v2.csv \
+    --output-dir validation_output_OH_AstonVilla
+
+ ========= Run FI Fact Report Validation
+
+ python3 fi_fact_validation_script.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/FIFactReport/Secor/secor_09-12.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/FIFactReport/iceberg_09-12.csv \
+    --output-dir fact_validation_output_MelbourneStorm
+
+python3 order_header_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OH/HNF/secor_16-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OH/HNF/iceberg_16-09.csv \
+    --output-dir validation_output_OH_HNF
+
+python3 order_details_validation_updated.py \
+    --secor-files /Users/agarimella/partner_feeds_validation/data/OD/HNF/secor_16-09.csv \
+    --iceberg-files /Users/agarimella/partner_feeds_validation/data/OD/HNF/iceberg_16-09.csv \
+    --output-dir validation_output_OD_HNF
